@@ -1,0 +1,56 @@
+
+.container {
+    max-width: 400px;  /* Ancho máximo del contenedor */
+    margin: 100px auto; /* Centrar el contenedor en la página */
+    background-color: #222; /* Color de fondo oscuro */
+    padding: 20px; /* Espaciado interno del contenedor */
+    color: #00ff00; /* Color del texto en verde */
+    border-radius: 5%;
+    font-family: "Get Schwifty", cursive; /* Tipo de letra de Rick and Morty */
+    text-align: center; /* Centrar el texto en el contenedor */
+  }
+  
+  /* Estilos para los inputs */
+  .container input {
+    width: 90%; /* Ancho del input al 100% del contenedor */
+    padding: 10px; /* Espaciado interno del input */
+    margin-bottom: 15px; /* Espaciado inferior entre inputs */
+    background-color: #444; /* Color de fondo del input */
+    color: #00ff00; /* Color del texto en verde */
+    font-family: "Get Schwifty", cursive; /* Tipo de letra de Rick and Morty */
+    border: black; /* Sin bordes en el input */
+    outline: greenyellow; /* Sin contorno al seleccionar el input */
+  }
+  
+  /* Estilos para los labels */
+  .container label {
+    display: block; /* Mostrar los labels como bloques */
+    margin-bottom: 10px; /* Espaciado inferior entre labels */
+  }
+  
+  /* Estilos para el botón */
+  .container button {
+    width: 60%; /* Ancho del botón al 100% del contenedor */
+    padding: 10px; /* Espaciado interno del botón */
+    background-color: #666; /* Color de fondo del botón */
+    color: #00ff00; /* Color del texto en verde */
+    font-family: "Get Schwifty", cursive; /* Tipo de letra de Rick and Morty */
+    border: none; /* Sin bordes en el botón */
+    outline: none; /* Sin contorno al seleccionar el botón */
+    cursor: pointer; /* Cambiar el cursor al pasar por encima del botón */
+  }
+  
+  /* Estilos para el botón al pasar el cursor por encima */
+  .container button:hover {
+    background-color: #01ff4d; /* Cambiar el color de fondo del botón al pasar el cursor por encima */
+    color: #222;
+  }
+  
+  /* Estilos para la imagen encima del input */
+  .container img {
+    max-width: 400px; /* Ancho máximo de la imagen */
+    border-radius: 5%; /*radio de la imagen*/
+    margin: 0 auto; /* Centrar la imagen en el contenedor */
+    display: block; /* Mostrar la imagen como bloque */
+    margin-bottom: 10px; /* Espaciado inferior entre la imagen y el input */
+  }

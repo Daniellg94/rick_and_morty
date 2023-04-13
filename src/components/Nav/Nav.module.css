@@ -1,0 +1,36 @@
+.Navcontainer {
+  background-color: rgba(0, 0, 0, 0.8); /* Fondo negro con transparencia */
+  color: #ccc; /* Color de texto gris */
+  display: flex; /* Mostrar elementos en línea */
+  align-items: center; /* Alinear elementos verticalmente */
+  justify-content: space-between; /* Alinear elementos en los extremos */
+  padding: 0px; /* Espaciado interno */
+  position: relative; /* Posición relativa para la línea inferior */
+}
+.Navcontainer::after {
+  content: "";
+  position: absolute; /* Posición absoluta para la línea inferior */
+  bottom: 0; /* Colocar en la parte inferior */
+  left: 0; /* Colocar en el extremo izquierdo */
+  width: 100%; /* Ancho completo */
+  height: 2px; /* Altura de la línea */
+  background-color: #0f0; /* Color de línea verde */
+}
+
+.Navcontainer button {
+  margin-left: 10px; /* Espaciado a la derecha de los botones */
+  background-color: #585757; /* Fondo gris de los botones */
+  border: 1px solid black; /* Sin borde */
+  padding: 5px 10px; /* Espaciado interno */
+  color: #000; /* Color de texto negro */
+  border-radius: 5px; /* Bordes redondeados */
+  outline: none; /* Sin contorno al hacer clic */
+  }
+  
+  /* Estilo para el botón de búsqueda al pasar el mouse encima */
+  .Navcontainer button:hover {
+    background-color: yellowgreen;
+    color: black;}
+   
+   
+

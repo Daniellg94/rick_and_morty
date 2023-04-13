@@ -1,0 +1,64 @@
+.cardContainer {
+    max-width: 300px  ;
+    border-radius: 1px;
+    border: 10px ridge rgba(102, 104, 102, 0.856) ;
+    background-color: rgba(74, 78, 74, 0.5);
+    margin: 100px auto;
+    font-family: "Get Schwifty", cursive;
+    text-align: center;
+    border-radius: 15px;
+    justify-content: center;
+    }
+    
+    .cardContainer:hover {
+        border-color: rgba(1, 236, 1, 0.918);
+      }
+    
+    .cardContainer button{
+        position: relative;
+        background-color: rgba(44, 44, 44, 0.5);
+        border-radius: 50%;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .info {
+        position: fixed;
+        position: 50%;
+        background-color: rgba(8, 219, 43, 0.5)
+    }
+    .info:hover{
+        opacity: 1;
+        visibility: visible;
+        background-color: rgba(231, 12, 12, 0.795) ;
+    }
+
+
+    .cardContainer button:hover{
+        background-color: rgba(230, 75, 4, 0.918);
+    }
+    
+    .cardlink {
+        display: block;
+        position: relative;
+        width: auto;
+        margin: 20px;
+        padding: 3px 8px;
+        background-color: #485e49;
+        color: #000000;
+        text-decoration: none;
+        border: none;
+        border-radius: 15px;
+        cursor: pointer;
+      }
+    
+    .cardlink:hover{
+        background-color: greenyellow;
+    }
+    
+    .cardContainer img{
+        margin: 20px center;
+        border-radius: 15%;
+        width: 280px;
+    }
+    
