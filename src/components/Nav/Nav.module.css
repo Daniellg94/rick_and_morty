@@ -30,7 +30,9 @@
   /* Estilo para el botón de búsqueda al pasar el mouse encima */
   .Navcontainer button:hover {
     background-color: yellowgreen;
-    color: black;}
+    color: black;
+    box-shadow: 0 0 1rem rgba(81, 255, 110, 0.461), 0 0 1rem rgba(81, 255, 110, 0.461), 0 0 .8rem rgba(81, 255, 110, 0.461);
+  }
    
    
 

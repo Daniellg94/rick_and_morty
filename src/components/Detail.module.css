@@ -12,6 +12,7 @@
     color: yellowgreen;
     font-family: "Get Schwifty", cursive;
     font-size: 40px;
+    box-shadow: 0 0 .2rem rgba(81, 255, 110, 0.461), 0 0 .1rem rgba(81, 255, 110, 0.461), 0 0 .8rem rgba(81, 255, 110, 0.461);
   }
   
   
@@ -25,6 +26,7 @@
   .imagecontainer img {
 
     border-radius: 50%;
-    border: 10px ridge  rgba(10, 250, 1, 0.5);
+    border: 10px ridge  rgba(9, 255, 0, 0.904);
     width: 400px;
+    box-shadow: 0 0 1rem rgba(81, 255, 110, 0.461), 0 0 .1rem rgba(81, 255, 110, 0.461), 0 0 .8rem rgba(81, 255, 110, 0.461);
   }
