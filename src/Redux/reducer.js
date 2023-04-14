@@ -18,28 +18,27 @@ const reducer =(state =initialState,{type,payload})=>{
             return{...state,
                 myFavorites: state.myFavorites.filter(fav => fav.id !== payload)}
         }
-        case FILTER: {
-            const allCharactersF = state.allCharacters.filter(character=> character.gender === payload )
-            return{...state,
-                
-                myFavorites: 
-                payload === 'allCharacters'
-                ?[...state.allCharacters]
-                :allCharactersF
+        case FILTER:
+      const filteredCharactersFav = state.allCharacters?.filter(
+        character => payload !== 'allCharacter' ? character.gender === payload : true);
+      return {
+        ...state,
+        myFavorites: filteredCharactersFav
+      }
+        
+      case ORDER:
+        const sortCharactersFav = [...state.myFavorites]
+          .sort((a, b) => {
+            switch (payload.toUpperCase()) {
+              case 'A': return a.id - b.id;
+              case 'D': return b.id - a.id;
+              default: return 0;
+            }
+          })
+        return {
+          ...state,
+          myFavorites: sortCharactersFav
         }
-        }
-        case ORDER: {
-
-            const allCharacterCopy = [...state.allCharacters]
-
-            return{...state,
-
-                myFavorites: 
-                payload === 'A'
-                ?allCharacterCopy.sort((a,b)=> a.id - b.id)
-                :allCharacterCopy.sort((a,b)=> b.id - a.id)
-        }
-    }
         default: return{...state}
     }
 }

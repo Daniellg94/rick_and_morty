@@ -6,6 +6,8 @@ import { useState, useEffect } from "react";
 
 function Card({id,name,species,gender,image,onClose,removeFav,addFav,myFavorites}) {
 
+   console.log(styles)
+
    const [isFav, setIsFav] = useState(false);
 
    const handleFavorite = () => {
@@ -26,13 +28,14 @@ function Card({id,name,species,gender,image,onClose,removeFav,addFav,myFavorites
          }
       });
    }, [myFavorites]);
+
    return (
       
       <div className={styles.cardContainer}>
       
-      <button onClick={handleFavorite}>{isFav ? '❤️' : '🤍' }</button>
+      <button onClick={handleFavorite} className={styles.stylebutton}>{isFav ? '❤️' : '🤍' }</button>
    
-         <button onClick={() => onClose(id)}>X</button>
+         <button onClick={() => onClose(id)} className={styles.stylebutton2}>X</button>
          <img src={image} alt='' />
          
          <div className={styles.info}>

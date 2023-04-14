@@ -17,7 +17,6 @@ const API_KEY = '6aea350df2d6.dbc1c1f2c52426402b94'
 function App() {
 
    const [characters, setCharacters]= useState([])
-
    const navigate = useNavigate();
    const [access, setAccess] = useState(false);
    const Email = 'ejemplo@gmail.com';
